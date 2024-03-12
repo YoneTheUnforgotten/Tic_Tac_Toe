@@ -126,12 +126,12 @@ public void ziehen(int spieler){
      }
      scanner.close();
 }
-  public int werGewinnt(){
+  public int werGewinnt(){//Inspiriert von https://www.neverstopbuilding.com/blog/minimax(def score(game Methode)
     if(jemandHatGewonnen == true && spieler == 1){
         return 10;
     }else
     if (jemandHatGewonnen == true && spieler == -1) {
-        return -1;
+        return -10;
     } else {
         return 0;
     }
